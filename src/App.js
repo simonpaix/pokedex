@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import "bootstrap/dist/css/bootstrap.min.css"; //import it here on the top so we can override some of it with our own css 
+
+import "./App.css";
+
+import NavBar from "./components/layouts/NavBar";
+import Dashboard from "./components/layouts/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <div className="container">
+        <Dashboard/>  
+      </div>
     </div>
   );
 }
