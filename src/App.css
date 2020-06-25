@@ -1,5 +1,5 @@
 .App{
-  padding-top: 50px; /* from Bootstrap guide you should use this padding to avoid navbar overlapping content*/
+  padding-top: 100px; /* from Bootstrap guide you should use this padding to avoid navbar overlapping content*/
   min-height: 100vh; /*100 viewer height makes the app take the entire page height */
 }
 .navbar{
